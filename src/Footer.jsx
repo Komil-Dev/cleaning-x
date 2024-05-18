@@ -8,18 +8,17 @@ const Footer = () => {
         <Box display="flex" justifyContent="space-between" flexWrap="wrap">
           {/* About Section */}
           <Box flex={1} minWidth={250} my={2}>
-            <Typography variant="h6" color="textPrimary" gutterBottom>
-              About Us
+            <Typography variant="h4" color="textPrimary" fontWeight={600}>
+              Quality cleaning your home
             </Typography>
             <Typography variant="body2" color="textSecondary">
-              We are dedicated to providing top-notch cleaning services for homes and businesses. Our team of
-              experienced professionals is committed to ensuring your space is spotless and comfortable.
+              We are dedicated to providing top-notch cleaning services for homes.
             </Typography>
           </Box>
 
           {/* Contact Section */}
           <Box flex={1} minWidth={250} my={2}>
-            <Typography variant="h6" color="textPrimary" gutterBottom>
+            <Typography variant="h4" fontWeight={600} color="textPrimary">
               Contact Us
             </Typography>
             <Typography variant="body2" color="textSecondary">
@@ -40,15 +39,18 @@ const Footer = () => {
 
           {/* Services Section */}
           <Box flex={1} minWidth={250} my={2}>
-            <Typography variant="h6" color="textPrimary" gutterBottom>
-              Our Services
+            <Typography variant="h4" color="textPrimary" fontWeight={600}>
+              Hours
             </Typography>
             <List>
-              <ListItem disablePadding>Residential Cleaning</ListItem>
-              <ListItem disablePadding>Commercial Cleaning</ListItem>
-              <ListItem disablePadding>Carpet Cleaning</ListItem>
-              <ListItem disablePadding>Window Cleaning</ListItem>
-              <ListItem disablePadding>Special Event Cleaning</ListItem>
+              <Typography variant="h5" disablePadding>
+                Monday to Friday
+              </Typography>
+              <ListItem disablePadding>6:00 AM-9:00 PM</ListItem>
+              <Typography variant="h5" disablePadding>
+                Saturday & Sunday
+              </Typography>
+              <ListItem disablePadding>8:00 AM-8:00 PM</ListItem>
             </List>
           </Box>
 
